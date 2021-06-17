@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Litmus - Welcome </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel = "stylesheet" type="text/css" href = "./css/style.css" />
+        <link rel = "stylesheet" type="text/css" href = "./css/style-mobile.css" />
+        <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    </head>
+    <body> 
+        <div id = "page-logo">
+            <img src = "./img/logo2.png" />
+            <h1> <strong> Litmus </strong> - <i> A Virtual Experiment In Reciprocity </i> </h1>
+            <h3> by <strong> Willing Kompany </strong> </h3>
+        </div>
+        <div id = "ticket-check">
+            <h1> Please click here to check your ticket. </h1>
+            <button type = 'button' id = "authentication-button"> Check In </button>
+        </div>        
+        <script>
+            var ticketButton = document.getElementById('authentication-button');
+            ticketButton.addEventListener('click', () => {getTicketPage()});
+
+            async function getTicketPage() {
+                var eventbritelink = await fetch('/gotoeventbrite');
+                var eventbriteres = await eventbritelink.json();
+                console.log(eventbriteres.url);
+                window.location.replace(eventbriteres.url);
+            }
+        </script>
+    </body>
+</html>

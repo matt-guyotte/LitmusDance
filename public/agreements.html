@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Litmus - Waiting Room </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- <link rel = "stylesheet" type="text/css" href = "./css/style.css" /> -->
+        <link rel = "stylesheet" type="text/css" href = "./css/agreement.css" />
+        <link rel = "stylesheet" type="text/css" href = "./css/style-mobile.css" />
+    </head>
+    <body> 
+        <div id = "disclaimer">
+            <h2> <strong>  Disclaimer </strong> </h2>
+            <p> For this performance you will need a stable connection to the internet and the ability to submit text input. </p>
+            <p> You do not need a camera or microphone and will not be seen or heard on screen. </p>
+            <p> The purpose of Litmus is to create a space for genuine connection between performers and 
+                audiences in a historical period defined by isolation and tumult. </p>
+            <p> Each iteration of Litmus accommodates 1 participant via this portal, however each iteration 
+                is livestreamed to our YouTube Live account to increase access to the performance and to raise 
+                money to support accessible arts programming in southern California. </p>
+                <p> Litmus asks that patrons create an account via Eventbrite in order to access the performance. 
+                This account is subject to <a href = "https://bit.ly/3nMbnMw" > Eventbrite’s terms and conditions. </a> </p>
+            <p> Patrons are also asked to share some personal information during the performance. In doing so, 
+                patrons make a connection with the performer and invite them to create a unique performance for 
+                you based on your input. This information will only be seen by the performer and will not be 
+                shared on the YouTube Live stream or with any third party. The performer will make reference 
+                to this input without sharing any personal or private information. During the performance, 
+                participants are asked to share some personal information. In doing so, patrons make a connection 
+                with the performer and invite them to create a unique experience based on your input. This 
+                information will only be seen by the performer and will not be shared on the YouTube Live 
+                stream or with any third party. The performer may make reference to your input during the 
+                performance without sharing any personal or private information.  </p>
+            <p> <strong> If you have questions or concerns about Litmus, please contact info@willingkompany.com </strong> </p>
+        </div>
+        <div id = "privacy">
+            <h2> <strong> Privacy </strong> </h2>
+            <p> <strong> <i> The only data collected by Litmus is: </i> </strong> (i) user input voluntarily shared by participants. This 
+                input is not shared with any third parties or on the livestream of the performance. Litmus does 
+                not collect any information other than what you manually submit through the Litmus website.</p>
+            <p> <strong> <i> Litmus Uses Cookies. </i> </strong> Many sites use cookies and/or other technologies to place information about a user’s visit to that 
+                website in a small data text file that is stored on the user’s computer. Litmus does use “cookies” or similar technologies 
+                in connection with this website in order to facilitate the user experience. </p>
+            <p> <strong> <i> How Litmus Uses Information Collected Through This Site: </i> </strong> </p>
+            <ul>
+                <li> <i> Litmus </i> is an experience dedicated to connection and does not sell or share user data with any 3rd parties or advertisers. </li>
+                <li> <i> Litmus </i> uses user submitted data to construct a unique dance performance for each patron/participant. </li>
+                <li> User submitted input will be seen by the performer. Performers will reference this input without sharing any private details of this input. </li>
+            </ul>
+            <p> <strong> <i> Children Under the Age of Thirteen. </i> </strong> Litmus does not knowingly collect data or personal information from children 
+                under the age of 13. If you are under the age of 13, please do not provide any personal information on or to this Site. If you believe that 
+                a child under 13 has submitted personal information on or through this Site without the consent and supervision of a parent or guardian, 
+                please contact Litmus so that appropriate action can be taken.</p>
+        </div>
+        <br />
+        <div id = "terms">
+            <h2><strong>TERMS OF USE:</strong></h2>
+            <p> <i> Litmus </i> user input interface will be monitored for inappropriate, offensive and/or obscene content, including but not 
+                limited to any material that is profane, inaccurate, defamatory, false, inappropriate, threatening, hateful, 
+                constitutes junk mail or unauthorized advertising, infringes on any person’s privacy, violates copyright laws, 
+                encourages conduct that would constitute a criminal offense, give rise to civil liability, or otherwise be in violation 
+                of any local, state, national, or international law or regulation. </p>
+            <p> <i> Litmus </i> reserves the right to remove users posting any such content at any time without your consent.</p>
+        </div>
+        <h4> <strong> Please check the box before continuing. </strong> </h4>
+        <div id = "agreement-block">
+            <input type = "checkbox" id = "agreement-check"> </input> 
+            <p id = "agreement-words"> I accept the terms and service. </p>
+            <button type = "button" id = "agreement-next"> Next </button>
+        </div>
+        <script>
+            var agreementCheck = document.getElementById('agreement-check');
+            document.getElementById('agreement-next')
+            .addEventListener('click', () => {ifChecked()})
+
+            function ifChecked() {
+                console.log('if checked')
+                console.log(agreementCheck.checked);
+                if (agreementCheck.checked == true) {
+                    console.log('is checked')
+                    window.location.replace('https://litmusdance.com/krusw76dm5zkenpd');
+                }
+            }
+        </script>        
+    </body>
+</html>

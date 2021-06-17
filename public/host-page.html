@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Litmus - Host Page </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel = "stylesheet" type="text/css" href = "./css/style-host.css" />
+        <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    </head>
+    <body>
+        <div id = "buttons">
+        <!-- <button type = "button" id = "start-show"> Open Waiting Room </button>
+        <button type = "button" id = "hold-show"> Close Waiting Room </button> --> 
+        <button type= "button" id = "host_button_clear"> Clear Show Data </button>
+        <br />
+        <button type= "button" id = "host_button_0"> Return to Video </button>
+        <button type= "button" id = "host_button_1"> First Prompts </button>
+        <button type= "button" id = "host_button_2"> Second Prompts </button>
+        <button type= "button" id = "host_button_3"> Credits </button>
+        <br />
+        <button type = "button" id = "guide-user-out"> Guide User Out </button>
+        <button type = "button" id = "kick-out"> Kick Out </button>
+        </div>
+        <hr />
+        <div id = "general-status">
+            <div id = "viewers">
+                <h4> Viewers: </h4>
+                <h3 id = "viewer-text"> </h3>
+            </div>
+            <div id = "current-position">
+                <h4> Current Page: </h4>
+                <h3 id = "current-pos-text"> </h3>
+            </div>
+        </div>
+        <hr />
+        <div id = "prompts">
+            <div id = "prompts-box-first">
+                <div id = "incoming-prompts-1">
+                    <div id = "text-prompt-title-1">
+                        <p> <strong> First Text Prompts </strong> </p>
+                    </div>
+                    <div id = "text-prompt-host-1-container">
+                        <p> text prompt 1 (a fear): </p>
+                        <h4 id = "text-prompt-host-1"> <strong> </strong> </h4>
+                    </div>
+                    <div id = "text-prompt-host-2-container">
+                        <p> text prompt 2 (a hope): </p>
+                        <h4 id = "text-prompt-host-2"> <strong> </strong> </h4>
+                    </div>
+                    <div id = "text-prompt-host-3-container">
+                        <p> text prompt 3 (a secret): </p>
+                        <h4 id = "text-prompt-host-3"> <strong> </strong> </h4>
+                    </div>
+                </div>
+                <div id = "color-positions-1">
+                    <div id = "light-prompt-title-1">
+                        <p> <strong> First Light Prompts </strong> </p>
+                    </div>
+                    <div id = "picked-color-1-container">
+                        <p> Color picked: </p>
+                        <div id = "picked-color-1"> </div>
+                    </div>
+                    <div id = "color-start-1-container">
+                        <p> Starting position: </p>
+                        <h4 id = "color-start-1"> <strong> </strong> </h4>
+                    </div>
+                    <div id = "color-end-1-container">
+                        <p> Ending position: </p>
+                        <h4 id = "color-end-1"> <strong> </strong> </h4>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id = "prompts-box-second">
+                <div id = "incoming-prompts-2">
+                    <div id = "text-prompt-title-2">
+                        <p> <strong> Second Text Prompts </strong> </p>
+                    </div>
+                    <div id = "text-prompt-host-4-container">
+                        <p> text prompt 4 (Where do you go...): </p>
+                        <h4 id = "text-prompt-host-4"> <strong> </strong> </h4>
+                    </div>
+                </div>
+                <div id = "color-positions-2">
+                    <div id = "light-prompt-title-2">
+                        <p> <strong> Second Light Prompts </strong> </p>
+                    </div>
+                    <div id = "picked-color-2-container">
+                        <p> Color picked: </p>
+                        <div id = "picked-color-2"> </div>
+                    </div>
+                    <div id = "color-start-2-container">
+                        <p> Starting position: </p>
+                        <h4 id = "color-start-2"> </h4>
+                    </div>
+                    <div id = "color-end-2-container">
+                        <p> Ending position: </p>
+                        <h4 id = "color-end-2"> </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "youtube-update">
+            <p> Enter the YouTube link for the stream. </p>
+            <input id = "youtube-update-link" type = "text"> </input>
+            <button type = "button" id = "youtube-update-submit"> Submit </button>
+        </div>
+        <script type = "text/javascript" src = "host_buttons.js"></script>
+        <script type = "text/javascript" src = "page-check-host.js"></script>
+        <script type = "text/javascript" src = "checkshow-host.js"></script>
+        <script type = "text/javascript" src = "checkuser.js"></script>
+        <script type = "text/javascript" src = "host-scan.js"></script>
+        <script type = "text/javascript" src = "check-waiting.js"></script>
+        <script type = "text/javascript" src = "changeYT.js"></script>
+        <script type = "text/javascript" src = "viewers.js"></script>
+    </body>
+</html>

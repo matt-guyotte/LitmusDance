@@ -1,0 +1,166 @@
+/*
+  320px(max) = Phone Vertical
+  321px(min) - 420px(max) = Phone Sideways 
+  768px(min) - 1024px(max) = iPad
+  1200px(min) - 1800px(max) = Desktop/Laptop
+  1200px+
+*/
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 415px) {
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    h4, p {
+        font-size: 12px;
+    }
+
+    #page-logo h1 {
+        font-size: 12px;
+        padding-bottom: 2%;
+    }
+
+    #page-logo h3 {
+        font-size: 7px;
+    }
+    #flip-screen {
+        display: block;
+    }
+    .user-input-container-credits {
+        grid-template-columns: 20% 60% 20%;
+    }
+    #thank-you-page-end-pic img {
+        width: 85%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 416px) and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4, p {
+        font-size: 15px;
+    }
+
+    #page-logo h1 {
+        font-size: 22px;
+        padding-bottom: 2%;
+    }
+
+    #page-logo h3 {
+        font-size: 15px;
+    }
+
+    #flip-screen {
+        display: none;
+    }
+
+    .user-input-container-credits {
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    #thank-you-page-end-pic img {
+        min-height: 100vh;
+        width: 70%;
+    }
+/* Styles */
+}
+
+/* iPads */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4, p {
+        font-size: 15px;
+    }
+
+    #page-logo h1 {
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    #page-logo h3 {
+        font-size: 11px;
+    }
+
+    #flip-screen {
+        display: none;
+    }
+
+    .user-input-container-lights-2 {
+        min-height: 70vw;
+        max-height: 70vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 20% 60% 20%;
+        margin-top: -100px;
+    }
+
+    #thank-you-page-end-pic img {
+        width: 50%;
+    }
+    
+/* Styles */
+}
+
+/* Desktops/Laptops ----------- */
+@media only screen  and (min-width : 1025px) and (max-width: 1800px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 19px;
+    }
+    
+    h4, p {
+        font-size: 16px;
+    }
+    #flip-screen {
+        display: none;
+    }
+    #thank-you-page-end-text p {
+        font-size: 20px;
+    }
+}
+
+/* Large Screens/TV ---------- */
+@media only screen and (min-width: 1800px) {
+    #flip-screen {
+        display: none;
+    }
+}
